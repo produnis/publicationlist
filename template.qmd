@@ -1,4 +1,6 @@
 ---
+title: Publikationsliste
+asof: Stand
 date: 2022-12-24
 bibliography: literatur.bib
 vorname: Prof. Dr. Georg
