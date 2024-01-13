@@ -1,0 +1,31 @@
+---
+date: 2022-12-24
+bibliography: literatur.bib
+vorname: Prof. Dr. Georg
+nachname: Mustermann
+strasse: Reinarzstr. 49
+plz: 47805
+ort: Krefeld
+graduate: Professor für Alles
+telefon: +49 555 822 5555
+email: mustermann@hs-niederrhein.de
+passbild: foto.png
+publikationen:
+  - list:
+      key: journal
+      title: Zeitschriftenartikel (peer-reviewed)
+  - list:
+      key: buch
+      title: Bücher   
+  - list:
+      key: buchkapitel
+      title: Buchkapitel
+  - list:
+      key: konferenz
+      title: Konferenzbeiträge (peer-reviewed)   
+  
+format:
+  publicationlist-pdf
+---
+
+

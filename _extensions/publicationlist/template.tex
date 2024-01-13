@@ -1,0 +1,72 @@
+\documentclass[a4paper,% DIN A4-Papier
+            11pt] % 12er Schrift
+            {moderncv} % Lebenslauf-Klasse
+\setcounter{tocdepth}{3} 
+\usepackage{geometry}
+\geometry{a4paper,left=25mm,right=20mm, bottom=30mm}
+\usepackage[T1]{fontenc}        % Schriftverbesserung
+\usepackage[ngerman]{babel} % Deutscher Satzbau
+\usepackage{wrapfig}
+\usepackage{times} 
+\usepackage{lastpage}
+% Biblatex with BIBER---------------------------------
+\usepackage[style=apa,sortcites=true,sorting=ydnt,backend=biber]{biblatex}
+\DeclareLanguageMapping{ngerman}{ngerman-apa}
+\addbibresource{$bibliography$}
+\moderncvtheme{classic}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+
+%-----------------------------------------------------
+% hebe mich als Autoren hervor
+% erfordert manuelle Bearbeitung der .bib-Datei,
+% ergänze bei jedem Eintrag
+%     author+an = {3=highlight},
+% und ersetze die "3" durch deine Position
+% in der Autorenreihe
+\renewcommand*{\mkbibnamegiven}[1]{%
+  \ifitemannotation{highlight}
+    {\textbf{#1}}
+    {#1}}
+
+\renewcommand*{\mkbibnamefamily}[1]{%
+  \ifitemannotation{highlight}
+    {\textbf{#1}}
+    {#1}}
+%-----------------------------------------------------
+
+\rfoot{\textit{\small{\thepage/\pageref{LastPage}}}}
+\name{$vorname$}{$nachname$}
+\firstname{$vorname$}
+\familyname{$nachname$}
+\address{$strasse$}{$plz$ $ort$}
+\mobile{$telefon$}
+\email{$email$}
+\photo[64pt][0.4pt]{$passbild$}	
+\title{$graduate$}
+
+
+
+\begin{document}
+
+\makecvtitle
+\begin{center}
+\Huge \textbf{Publikationsliste}\normalsize\\[2mm] Stand: $date$
+\end{center}
+\bigskip
+%----------CAVE ! --------------------------------------------
+% this "\nocite{*}" command has to be set. 
+% it will mark all non-cited entries for bibliography.
+% Otherwise, you will get "empty bibliography"
+\nocite{*}
+%-------------------------------------------------------------
+
+$for(publikationen)$
+$for(it.list)$
+\printbibliography[keyword={$it.key$}, title={$it.title$}]
+$endfor$
+$endfor$
+
+$body$
+\end{document}
