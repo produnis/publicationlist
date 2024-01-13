@@ -29,5 +29,3 @@ publikationen:
 format:
   publicationlist-pdf
 ---
-
-
