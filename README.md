@@ -2,6 +2,8 @@
 
 This repository contains a [quarto](https://quarto.org) extension designed to generate a publication list from a BibTeX file, producing a PDF output.
 
+![](https://www.produnis.de/blog/posts/2021-04-19-publikationsliste-im-lebenslauf-mit-latex/publikationslebenslauf.png)
+
 ## Installation
 
 To use this extension, execute the following command:
