@@ -6,13 +6,17 @@ contributes:
   formats:
     pdf:
       documentclass: moderncv
+      moderncvtheme: classic #casual
+      cvoption: blue  # green, red, orange, grey
       cite-method: biblatex
       biblatexoptions: 
         - style=apa
         - backend=biber
         - sortcites=true
-        - sorting=ydnt      
+        - sorting=ydnt    
+        - defernumbers=true
       lang: de
       date-format: "DD.MM.YYYY"
       linkcolor: black
+      subbibliography: false
       template: template.tex

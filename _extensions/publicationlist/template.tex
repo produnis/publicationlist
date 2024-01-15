@@ -4,7 +4,6 @@
 \setcounter{tocdepth}{3} 
 \usepackage{geometry}
 \geometry{a4paper,left=25mm,right=20mm, bottom=30mm}
-%\usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc} 
 \usepackage[ngerman]{babel} % Deutscher Satzbau
 \usepackage{wrapfig}
@@ -14,7 +13,7 @@
 \usepackage[style=apa,sortcites=true,sorting=ydnt,backend=biber]{biblatex}
 \DeclareLanguageMapping{ngerman}{ngerman-apa}
 \addbibresource{$bibliography$}
-\moderncvtheme{classic}
+\moderncvtheme[$cvoption$]{$moderncvtheme$}
 
 \usepackage{fancyhdr}
 \pagestyle{fancy}
@@ -41,11 +40,14 @@
 \name{$vorname$}{$nachname$}
 \firstname{$vorname$}
 \familyname{$nachname$}
+\title{$graduate$}
 \address{$strasse$}{$plz$ $ort$}
 \mobile{$telefon$}
 \email{$email$}
+$if(extrainfo)$
+\extrainfo{$extrainfo$}
+$endif$
 \photo[64pt][0.4pt]{$passbild$}	
-\title{$graduate$}
 
 
 
@@ -65,7 +67,7 @@
 
 $for(publikationen)$
 $for(it.list)$
-\printbibliography[keyword={$it.key$}, title={$it.title$}]
+\printbibliography[keyword={$it.key$}, title={$it.title$}$if(subbibliography)$, heading=subbibliography$endif$]
 $endfor$
 $endfor$
 

@@ -1,8 +1,9 @@
 # publicationlist
 
-This repository contains a [quarto](https://quarto.org) extension designed to generate a publication list from a BibTeX file, producing a PDF output.
+This repository contains a [quarto](https://quarto.org) extension designed to generate a publication list from a BibTeX file, producing a PDF output (this extension uses LaTeX document class "`moderncv`". A quarto extension for generating CVs is provided here: <https://github.com/produnis/quarto-cv>).
 
 ![](https://www.produnis.de/blog/posts/2021-04-19-publikationsliste-im-lebenslauf-mit-latex/publikationslebenslauf.png)
+
 
 ## Installation
 
@@ -76,4 +77,13 @@ publikationen:
   - list:
       key: konferenz
       title: Konferenzbeiträge (peer-reviewed) 
+```
+
+You can edit the `moderncv` options in YAML with parameters
+
+```
+---
+moderncvtheme: casual # classic #casual
+cvoption: red  # green, red, orange, grey
+---
 ```

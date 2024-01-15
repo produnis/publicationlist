@@ -2,16 +2,19 @@
 title: Publikationsliste
 asof: Stand
 date: 2022-12-24
-bibliography: literatur.bib
-vorname: Prof. Dr. Georg
-nachname: Mustermann
+vorname: Prof. Dr. Geörg
+nachname: Müstermänn
+graduate: Professor für Alles
 strasse: Reinarzstr. 49
 plz: 47805
 ort: Krefeld
-graduate: Professor für Alles
 telefon: +49 555 822 5555
 email: mustermann@hs-niederrhein.de
+extrainfo: "orcid: 0000-0002-XXXX-YYYY"
 passbild: foto.png
+#---------------------------------------------------
+bibliography: literatur.bib
+#subbibliography: true  # subheadings for bibliographies
 publikationen:
   - list:
       key: journal
@@ -25,7 +28,7 @@ publikationen:
   - list:
       key: konferenz
       title: Konferenzbeiträge (peer-reviewed)   
-  
+#---------------------------------------------------  
 format:
   publicationlist-pdf
 ---
