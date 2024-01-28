@@ -5,7 +5,7 @@ date: 2022-12-24
 vorname: Prof. Dr. Geörg
 nachname: Müstermänn
 graduate: Professor für Alles
-strasse: Reinarzstr. 49
+strasse: Reinarzstraße 49
 plz: 47805
 ort: Krefeld
 telefon: +49 555 822 5555
